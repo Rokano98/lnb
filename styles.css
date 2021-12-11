@@ -1,0 +1,707 @@
+@font-face{
+    font-family: "DIN";
+    src: url("fonts/DINPro.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+    }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: DIN;
+    overflow-x: hidden;
+}
+header{
+    height: 100px;
+    width: 100vw;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #FFF;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.book_now{
+    position: fixed;
+    right: 50px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #5B6460;
+    color: #FFF;
+    font-size: 14px;
+    border: 0 solid #FFF;
+    cursor: pointer;
+}
+.page1{
+    background-image: url(img/Intro.jpg);
+    min-height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+    padding-right: 100px;
+    color: #FFF;
+}
+.page1 h1{
+    font-family: "Open Sans";
+    font-size: 70px;
+    text-align: center;
+}
+.page1 span{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    width: 400px;
+    transform: translateX(-100px);
+}
+.book_now_main{
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #5B6460;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+.price_night{
+    background-color: #E9ECE0;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+.book_now2{
+    display: flex;
+    position: absolute;
+    transform: translate(100px, -60%);
+}
+.pn-1{
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 18px;
+}
+.pn-2{
+    font-size: 20px;
+    line-height: 28px;
+}
+.pn-3{
+    margin-left: auto;
+    font-size: 12px;
+    line-height: 18px;
+}
+.page2{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.page2-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.page2-text h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #5B6460;
+}
+.page2-text span{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+.page2-text a{
+    text-decoration: underline;
+}
+.page2-textblock{
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+}
+.page2-textblock a{
+    margin-top: 20px;
+}
+.page2-img{
+    width: 50%;
+}
+.page3{
+    display: flex;
+    justify-content: space-around;
+    min-height: 75vh;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px
+}
+.page3-img{
+    margin: 20px;
+}
+.page4{
+    width: 100vw;
+    min-height: 75vh;
+    display: flex;
+}
+.map{
+    width: 50%;
+    background-image: url(img/the\ forest.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page4-text{
+    width: 50%;
+    background-color: #E9ECE0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+}
+.page4-textblock{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.page4-textblock h1{
+    text-align: center;
+}
+.page4-textblock{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #5B6460;
+}
+.page4-textblock span{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+}
+.page4-textblock a{
+    font-family: Open Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5B6460;
+    text-decoration: underline;
+}
+.branch{
+    position: absolute;
+    transform: translate(0, 125%);
+    right: 150px;
+    width: 7vw;
+}
+.page5{
+    background-color: #5B6460;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.page5 h1{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.icon{
+    margin: 75px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.icon img{
+    margin-bottom: 20px;
+    width: 100px;
+}
+.icon span{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.page6{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page6-img{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.page6-img-1{
+    background-image: url(img/the-cabins-overlook-the-hekla-volcano-one-of-icelands-most-active-volcanoes-it-is-part-of-a-25-mile-long-volcanic-ridge-and-during-the-middle-ages-it-was-referred-to-by-europeans-as-the-gateway-to-hell\ 1.jpg);
+}
+.page6-img-2{
+    background-image: url(img/unique-panorama-glass-lodge-iceland8\ 1.jpg);
+}
+.page6-text{
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #E9ECE0;
+    border-radius: 9999999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page7{
+    width: 100vw;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+.page7-text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.page7-textblock{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.page7-textblock h1{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    color: #5B6460;
+}
+.page7-textblock a{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+.page7-links{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.page7-link{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5B6460;
+    border-radius: 9999px;
+}
+.page7-link img{
+    filter: invert(1);
+    height: 20px;
+}
+.page7-map{
+    margin-bottom: 30px;
+}
+.page7-mail{
+    margin-bottom: 40px;
+}
+.page7-book{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page7-book-block{
+    width: 50%;
+    height: 50%;
+    background-color: #FFF;
+}
+.page7-book-img{
+    width: 100%;
+    height: 65%;
+    background-image: url(img/Le-lieu-idéal-pour-observer-la-nature-©-Panorama-Glass-Lodge\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page7-book-down{
+    width: 100%;
+    height: 35%;
+    display: flex;
+}
+.page7-book-button{
+    background-color: #5B6460;
+    height: 100%;
+    width: 70%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.page7-book-price{
+    background-color: #E9ECE0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p7-price-from{
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+    margin-right: auto;
+}
+.p7-priceblock{
+    display: flex;
+    width: 45%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.p7-price-night{
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+    margin-left: auto;
+}
+.p7-price-price{
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+}
+footer{
+    width: 100vw;
+    min-height: calc(50vh - 100px);
+    background: #5B6460;
+    display: flex;
+    padding-top: 200px;
+}
+.fpage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.fpage1-blocktext{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.fpage1-blocktext h1{
+    font-family: "Open Sans";
+    font-style: bold;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.fpage1-blocktext input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0 solid #FFF;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFF;
+    width: 100%;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    width: 100%;
+}
+.arrow{
+    margin-left: auto;
+    cursor: pointer;
+}
+.fpage1-blocktext span{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+.fp1blcktxt-text{
+    margin-top: 10px;
+}
+.copyright{
+    margin-top: 50px;
+}
+.fpg2-names{
+    display: flex;
+    justify-content: space-between;
+}
+.fpg2-name{
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.fpage2-blocktext{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+.fpage2-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.mobile_menu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100vw);
+    transition: .5s;
+    display: none;
+}
+.mobile_menu nav{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.mobile_menu nav *{
+    margin-bottom: 10px;
+}
+.mobile_menu button{
+    display: flex;
+    position: relative;
+    right: 0;
+}
+.menu-btn {
+    position: absolute;
+    right: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger {
+    width: 50px;
+    height: 3px;
+    background: #343A40;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #343A40;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+@media screen and (max-width: 1200px){
+    nav{
+        display: none;
+    }
+    .page1{
+        padding-right: 0;
+        align-items: center;
+    }
+    .page1>span{
+        transform: translate(0,0);
+    }
+    .page2{
+        flex-flow: column;
+    }
+    .page2-text{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .page2-text{
+        width: auto;
+    }
+    .book_now{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+    }
+    .mobile_menu{
+        display: flex;
+    }
+    .menu-btn{
+        display: flex;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .branch{
+        display: none;
+    }
+}
+@media screen and (orientation: portrait) {
+    .page4{
+        flex-flow: column;
+    }
+    .map{
+        width: 100%;
+    }
+    .page4-text{
+        width: 100%;
+    }
+    .page7{
+        flex-flow: column;
+    }
+    .page7-book{
+        width: 100%;
+        height: 50vh;
+    }
+    .page7-text{
+        width: 100%;
+    }
+    .page7-book-block{
+        height: 75%;
+        width: 100%;
+    }
+    footer{
+        flex-flow: column;
+        padding-top: 10vh;
+    }
+    .fpage{
+        width: 100%;
+    }
+    .book_now2{
+        width: 100vw;
+        transform: translate(0, -60%);
+        display: flex;
+        justify-content: center;
+    }
+}
